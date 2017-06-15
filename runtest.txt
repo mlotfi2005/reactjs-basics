@@ -1,0 +1,45 @@
+
+> reactjs-basics@1.0.0 start /Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics
+> npm run build
+
+
+> reactjs-basics@1.0.0 build /Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics
+> webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot
+
+Hash: 6b341bed07de447afda5
+Version: webpack 2.6.1
+Time: 86ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  5.95 kB       0  [emitted]  main
+   [0] ./src/app/index.js 2.96 kB {0} [built] [failed] [1 error]
+
+ERROR in ./src/app/index.js
+Module build failed: Error: Cannot find module 'babel-core'
+    at Function.Module._resolveFilename (module.js:455:15)
+    at Function.Module._load (module.js:403:25)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/babel-loader/lib/index.js:3:13)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at loadLoader (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/loader-runner/lib/loadLoader.js:13:17)
+    at iteratePitchingLoaders (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/loader-runner/lib/LoaderRunner.js:169:2)
+    at runLoaders (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/loader-runner/lib/LoaderRunner.js:362:2)
+    at NormalModule.doBuild (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/webpack/lib/NormalModule.js:179:3)
+    at NormalModule.build (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/webpack/lib/NormalModule.js:268:15)
+    at Compilation.buildModule (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/webpack/lib/Compilation.js:146:10)
+    at moduleFactory.create (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/webpack/lib/Compilation.js:433:9)
+    at factory (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/webpack/lib/NormalModuleFactory.js:253:5)
+    at applyPluginsAsyncWaterfall (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/webpack/lib/NormalModuleFactory.js:99:14)
+    at /Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/tapable/lib/Tapable.js:204:11
+    at NormalModuleFactory.params.normalModuleFactory.plugin (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/webpack/lib/CompatibilityPlugin.js:52:5)
+    at NormalModuleFactory.applyPluginsAsyncWaterfall (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/tapable/lib/Tapable.js:208:13)
+    at resolver (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/webpack/lib/NormalModuleFactory.js:74:11)
+    at process.nextTick (/Users/majid/Documents/dev practices/reactJS/projects/reactjs-basics/node_modules/webpack/lib/NormalModuleFactory.js:205:8)
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
